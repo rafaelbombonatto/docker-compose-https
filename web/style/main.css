@@ -1,0 +1,145 @@
+:root{
+    --cinza:#7e7979;
+    --preta:#070303;
+    --vermelha:#f50909;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header .container{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;    
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;    
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+header{
+    background: var(--preta);
+}
+
+/* Base do Site */
+body{
+    background: var(--cinza);
+    font-family: 'Arial', Times, serif;    
+    color: white;
+}
+
+
+
+
+/* Série Principal */
+.destaque{
+    margin-top: 5px;
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/destaque.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: rgb(240, 240, 10);
+}
+
+.destaque .destaque-descricao{
+    margin-top: 10px;
+    margin-bottom: 90px;
+}
+
+.destaque-principal .destaque-titulo{
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.destaque .container{
+    width: 70%;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.box-show{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel{
+    margin-top: 5px;
+}
+
+.item-video{
+    height: 200px;
+}
+
+.footer{
+    background: var(--vermelha);
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.form-popup {
+    display: none;    
+    top: 30%;
+    left: calc(50% - 50px);
+    width: 75%;
+    position: absolute;          
+    border: 3px solid #f1f1f1;   
+    transform: translate(-50%, -50%); 
+    background-color: var(--cinza);
+  }
+
+  .form-container .btn {
+    background-color: #8d0000;
+    color: rgba(194, 194, 194, 0.904);
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }

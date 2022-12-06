@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/main.css">
+
+        <!-- Responsividase-->
+        <link rel="stylesheet" href="style/responsive.css">
+
+        <!-- OWN CSS-->
+        <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+        <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+        
+
+        <title>METALFLIX</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">                
+                <img class="logo" src="img/logo.png">
+                <nav>
+                    <a href="#">Inicio</a>
+                    <a href="#carrossel-shows">Shows</a>                    
+                    <a href="#carrossel-docs">Documentários</a>
+                    <a href="#carrossel-clips">Videoclips</a>
+                </nav>
+            </div>
+        </header>    
+
+        <main>
+            <div class="destaque">
+                
+                <div class="container">
+                    <h3 class="destaque-titulo">Iron Maiden - Flight 666</h3>
+                    <p class="destaque-descricao">
+                        Sinopse.<br>
+                        Um relato de parte da turnê mundial Somewhere Back in Time, em que a lendária banda de heavy metal Iron Maiden percorreu treze países a bordo de seu Boeing 757 customizado, pilotado pelo vocalista Bruce Dickinson.
+                    </p>
+                    <div class="series-botoes">                        
+                        <button role="button" class="botao" onclick="openForm()">
+                            <i class="fas fa-info-circle"></i>
+                            Mais Informações
+                        </button>
+                    </div>
+                </div>                
+            </div>
+        </main>
+
+        <div class="carrossel" id="carrossel-shows">
+            <h3 class="shows-titulo">SHOWS</h3>
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img class="box-show" src="img/shows/show_1.jpg" alt=""></div>
+                <div class="item"><img class="box-show" src="img/shows/show_2.jpg" alt=""></div>
+                <div class="item"><img class="box-show" src="img/shows/show_3.jpg" alt=""></div>
+                <div class="item"><img class="box-show" src="img/shows/show_4.jpg" alt=""></div>
+                <div class="item"><img class="box-show" src="img/shows/show_5.jpg" alt=""></div>
+                <div class="item"><img class="box-show" src="img/shows/show_6.jpg" alt=""></div>
+                <div class="item"><img class="box-show" src="img/shows/show_7.jpg" alt=""></div>
+            </div>
+        </div>
+
+        <div class="carrossel" id="carrossel-docs">
+            <h3 class="documentarios-titulo">Documentários</h3>
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img class="box-show" src="img/docs/doc_1.jpg" alt=""></div>
+                <div class="item"><img class="box-show" src="img/docs/doc_2.jpg" alt=""></div>
+                <div class="item"><img class="box-show" src="img/docs/doc_3.jpg" alt=""></div>
+                <div class="item"><img class="box-show" src="img/docs/doc_4.jpg" alt=""></div>
+                <div class="item"><img class="box-show" src="img/docs/doc_5.jpg" alt=""></div>
+                <div class="item"><img class="box-show" src="img/docs/doc_6.jpg" alt=""></div>
+                <div class="item"><img class="box-show" src="img/docs/doc_7.jpg" alt=""></div>                
+            </div>
+        </div>
+
+        <div class="carrossel" id="carrossel-clips">
+            <h3 class="videoclips-titulo">VideoClips</h3>
+            <div class="owl-carousel owl-theme">
+                <div class="item-video" data-merge="3"><a class="owl-video" href="https://www.youtube.com/watch?v=c7V0ejd-A2c&ab_channel=SAY10.MACABRE"></a></div>
+                <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=7171SvM-Ouk&ab_channel=AtomicFireRecords"></a></div>
+                <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=mjF1rmSV1dM&ab_channel=CenturyMediaRecords"></a></div>
+                <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=sv29zn_gXY8&ab_channel=AFMRecords"></a></div>
+                <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=55OJ17cHeJA&ab_channel=amonamarthVEVO"></a></div>
+                <div class="item-video" data-merge="3"><a class="owl-video" href="https://www.youtube.com/watch?v=X4bgXH3sJ2Q&ab_channel=IronMaiden"></a></div>
+                <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=YIqbdnaPcT8&ab_channel=mudvayneVEVO"></a></div>                                
+                
+            </div>
+        </div>
+
+               
+        <footer class="footer">
+            <p>Desenvolvido por Rafael Bombonatto</p>
+        </footer>
+
+        <!-- Painel de Detalhes do Destaque-->
+        <div class="form-popup" id="formDestaque">
+            <form action="/action_page.php" class="form-container">
+
+               <p>
+                Um relato de parte da turnê mundial Somewhere Back in Time, em que a lendária banda de heavy metal Iron Maiden percorreu treze países a bordo de seu Boeing 757 customizado, pilotado pelo vocalista Bruce Dickinson.<br><br>
+                Data de lançamento: 21 de abril de 2009 (Brasil)<br>
+                Duração: 1h 53m<br>
+                Diretores: Sam Dunn, Scot McFadyen<br>
+                Música composta por: Iron Maiden<br>
+                Roteiro: Sam Dunn, Scot McFadyen<br>
+                Produção: Sam Dunn, Scot McFadyen<br>
+                Edição: Mike Munn, Lisa Grootenboer, Wendy Hallam-Martin<br>
+               </p> 
+                
+            <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+            </form>
+        </div>
+
+        <!-- Scripts -->
+        <script src="https://kit.fontawesome.com/e66174f2fd.js" crossorigin="anonymous"></script>
+        <script src="js/owl/jquery.min.js"></script>
+        <script src="js/owl/owl.carousel.min.js"></script>        
+        <script src="js/owl/jquery.mousewheel.min.js"></script>
+        <script src="js/setup.js"></script>
+        <script>
+        function openForm() {
+            document.getElementById("formDestaque").style.display = "block";
+            document.getElementById("formDestaque").style.focus();
+          }
+          
+          function closeForm() {
+            document.getElementById("formDestaque").style.display = "none";
+          }
+        </script>  
+    </body>
+
+   
+
+</html>
